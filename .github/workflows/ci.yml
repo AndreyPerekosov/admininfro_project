@@ -27,7 +27,7 @@ jobs:
           python -m pip install -r requirements.txt
           python -m pip install -r requirements_dev.txt
 
-      - name: Rum tests
+      - name: Run tests
           run: python -m pytest -v
 
     package:
