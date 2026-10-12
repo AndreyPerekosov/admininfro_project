@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  content: read
+  contents: read
 
 jobs:
   test:
@@ -33,6 +33,7 @@ jobs:
     package:
       needs: test
       runs-on: ubuntu_latest
+
       steps:
         - name: Download repository
           uses: actions/checkout@v7
